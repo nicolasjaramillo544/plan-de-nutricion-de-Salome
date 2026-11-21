@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es" class=""><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Plan de nutrición · Salomé · NJ Coaching</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&amp;family=DM+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+:root{--bg:#FAF7F2;--card:#FFFDF9;--ink:#1A1714;--mid:#6B6560;--mut:#A09890;--ac:#C8A46E;--acl:#F0E4CC;--acd:#8B6A3A;--g:#4A7C59;--r:#C0645A;--line:rgba(26,23,20,.1);--hero:#1A1714;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#141210;--card:#1E1B18;--ink:#F3EEE6;--mid:#B3ABA2;--mut:#8A8279;--acl:#3A3125;--acd:#E0BE86;--line:rgba(255,255,255,.12);--hero:#0C0B0A;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#141210;--card:#1E1B18;--ink:#F3EEE6;--mid:#B3ABA2;--mut:#8A8279;--acl:#3A3125;--acd:#E0BE86;--line:rgba(255,255,255,.12);--hero:#0C0B0A;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--ink);line-height:1.5}
+.hero{background:var(--hero);color:#fff;padding:48px 28px 40px}
+.badge{display:inline-block;background:var(--ac);color:#1A1714;font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:4px 12px;border-radius:20px;margin-bottom:18px}
+h1,h2,h3,h4,.big{font-family:'Playfair Display',serif}
+h1{font-size:clamp(34px,6vw,54px);line-height:1.1}
+.sub{color:#A09890;font-size:14px;margin:6px 0 24px}
+.pills{display:flex;flex-wrap:wrap;gap:8px}
+.pills span{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);border-radius:20px;padding:5px 14px;font-size:12px;color:rgba(255,255,255,.75)}
+.pills b{color:var(--ac)}
+.wrap{max-width:1000px;margin:0 auto;padding:0 22px}
+.macros{background:var(--card);border-bottom:1px solid var(--line);padding:24px 0}
+.lbl{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--mut);margin-bottom:14px}
+.mg{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px}
+.mt{background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:14px 10px;text-align:center}
+.mt.dk{background:var(--hero);border-color:var(--hero)}
+.mt i{display:block;height:3px;border-radius:2px;margin-bottom:10px}
+.big{font-size:28px;line-height:1}
+.mt.dk .big{color:var(--ac)}
+.mt small{display:block;font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:var(--mut);margin-top:4px}
+.sec{margin:40px 0 18px;display:flex;align-items:center;gap:10px}
+.sec::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--ac)}
+.sec h2{font-size:23px}
+.tag{margin-left:auto;background:var(--acl);color:var(--acd);font-size:10px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;padding:3px 10px;border-radius:8px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px}
+.card h3{font-size:15px;margin-bottom:6px}
+.card p{font-size:13px;color:var(--mid)}
+.card .n{font-family:'Playfair Display',serif;font-size:30px;color:var(--ac);line-height:1;margin-bottom:6px}
+.note{background:var(--acl);border-left:3px solid var(--ac);color:var(--acd);padding:11px 15px;font-size:13px;border-radius:0 8px 8px 0;margin-bottom:14px}
+.mh{background:var(--hero);color:#fff;border-radius:12px 12px 0 0;padding:16px 22px;display:flex;align-items:center;gap:12px}
+.mh>b{width:32px;height:32px;border-radius:50%;border:1px solid rgba(200,164,110,.4);background:rgba(200,164,110,.15);color:var(--ac);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif}
+.mh h3{font-size:18px}.mh small{color:rgba(255,255,255,.5);font-size:12px}
+.ms{background:var(--card);border:1px solid var(--line);border-top:0;padding:10px 22px;display:flex;gap:18px;flex-wrap:wrap;font-size:12px;color:var(--mid)}
+.ms u{display:inline-block;width:7px;height:7px;border-radius:50%;margin-right:5px}
+.ms b{color:var(--ink)}
+.og{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));border:1px solid var(--line);border-top:0;border-radius:0 0 12px 12px;overflow:hidden;background:var(--card)}
+.oc{padding:18px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.oc em{display:inline-flex;width:20px;height:20px;align-items:center;justify-content:center;background:var(--acl);color:var(--acd);font:700 10px 'DM Sans';border-radius:5px;margin-bottom:8px}
+.oc h4{font-size:14px;line-height:1.3;margin-bottom:10px}
+ul{list-style:none}
+li{display:flex;justify-content:space-between;gap:8px;font-size:12px;color:var(--mid);padding:5px 0;border-bottom:1px solid var(--line)}
+li:last-child{border-bottom:0}
+li b{color:var(--acd);font-size:11px;font-weight:600;text-align:right}
+.dr{font-size:11px;color:var(--mut);font-style:italic;margin-top:8px}
+.meal{margin-bottom:34px}
+.pg{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.pc{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.pc>div{padding:10px 14px;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;background:var(--acl);color:var(--acd)}
+.pc ul{padding:6px 14px 10px}
+.foot{background:var(--hero);color:rgba(255,255,255,.4);text-align:center;padding:30px 22px;margin-top:44px;font-size:12px}
+.foot b{display:block;font-family:'Playfair Display',serif;font-size:18px;color:var(--ac);margin-bottom:6px}
+</style>
+</head>
+<body>
+<header class="hero"><div class="wrap" style="padding:0">
+<span class="badge">NJ Coaching · Plan personalizado</span>
+<h1>Salomé</h1>
+<p class="sub">Plan para pérdida de grasa&nbsp;</p>
+<div class="pills"><span>Edad <b>25 años</b></span><span>Peso <b>70 kg</b></span><span>Talla <b>161 cm</b></span><span>Entreno <b>6 días/semana</b></span><span>Comidas <b>4 al día</b></span></div>
+</div></header>
+
+<div class="macros"><div class="wrap">
+<div class="lbl">Distribución diaria</div>
+<div class="mg">
+<div class="mt dk"><i style="background:var(--ac)"></i><div class="big">1800</div>kcal<small style="color:rgba(255,255,255,.4)">Déficit ≈ −18%</small></div>
+<div class="mt"><i style="background:var(--g)"></i><div class="big">140</div>g<small>Proteína · 2.0 g/kg</small></div>
+<div class="mt"><i style="background:var(--ac)"></i><div class="big">186</div>g<small>Carbohidratos · 2.7 g/kg</small></div>
+<div class="mt"><i style="background:var(--r)"></i><div class="big">55</div>g<small>Grasas · 0.8 g/kg</small></div>
+<div class="mt"><i style="background:var(--mut)"></i><div class="big" style="font-size:22px">~2200</div>kcal<small>Mantenimiento estimado</small></div>
+</div></div></div>
+
+<main class="wrap">
+<div class="sec"><h2>Observaciones personalizadas</h2></div>
+<div class="cards" id="obs"><div class="card"><h3>Aumentar la actividad física indirecta</h3><p>Aumentar a 8.000–10.000 pasos diarios y levantarse 5 min cada 1 o 2 horas.&nbsp;</p></div><div class="card"><h3>No solo fijarse en la báscula</h3><p>Pesarse 3–4 mañanas por semana y mira el promedio y cada 15 días tomar fotos.&nbsp;</p></div></div>
+
+
+<div class="cards" id="plan"></div>
+
+
+<div id="meals"><section class="meal"><div class="sec" style="margin-top:0"><h2>Comida 1 · Desayuno</h2><span class="tag">Mañana</span></div><div class="note">Arranca el día con proteína: ~35 g. Estructura: 2 porciones de proteína + 1 de carbohidrato + 1 de fruta.</div><div class="mh"><b>1</b><div><h3>Desayuno</h3><small>~410 kcal</small></div></div><div class="ms"><span><u style="background:var(--g)"></u><b>~35g</b> proteína</span><span><u style="background:var(--ac)"></u><b>~40g</b> carbs</span><span><u style="background:var(--r)"></u><b>~12g</b> grasas</span></div><div class="og"><article class="oc"><em>A</em><h4>Huevos revueltos con arepa y jamón</h4><ul><li><span>Huevos enteros</span><b>3 und</b></li><li><span>Jamón&nbsp;</span><b>2 lonjas</b></li><li><span>Arepa mediana</span><b>1 und</b></li><li><span>Tomate picado</span><b>al gusto</b></li><li><span>Fresas</span><b>8 und</b></li><li><span>cucharadita de mantequiilla</span><b>para cocinar</b></li></ul><p class="dr">Agua, aromática, té o café sin azúcar.</p></article><article class="oc"><em>B</em><h4>Tostadas con huevo, jamón y tomate</h4><ul><li><span>Pan integral</span><b>2 rebanadas</b></li><li><span>Huevos enteros</span><b>3 und</b></li><li><span>Jamón&nbsp;</span><b>2 lonjas</b></li><li><span>Tomate en rodajas</span><b>al gusto</b></li><li><span>Manzana pequeña</span><b>1 und</b></li></ul><p class="dr">Agua, aromática, té o café sin azúcar.</p></article><article class="oc"><em>C</em><h4>Pancakes de banano y proteína</h4><ul><li><span>Banano maduro</span><b>1 und</b></li><li><span>Huevos enteros</span><b>2 und</b></li><li><span>Proteína Whey&nbsp;</span><b>1 scoop</b></li><li><span>Esencia de vainilla</span><b>al gusto</b></li><li><span>Fresas por encima</span><b>8 und</b></li><li><span>Licuar y cocinar en sartén</span><b>—</b></li></ul><p class="dr">Agua, aromática, té o café sin azúcar.</p></article><article class="oc"><em>D</em><h4>Bowl de yogur griego con granola</h4><ul><li><span>Yogur griego natural</span><b>250g</b></li><li><span>Granola sin azúcar</span><b>30g</b></li><li><span>Fresas o arándanos</span><b>8 / 10 und</b></li><li><span>Huevo cocido por aparte</span><b>1 und</b></li><li><span>Canela</span><b>al gusto</b></li></ul><p class="dr">Agua, aromática, té o café sin azúcar.</p></article></div></section><section class="meal"><div class="sec" style="margin-top:0"><h2>Comida 2 · Almuerzo</h2><span class="tag">Tarde</span></div><div class="note">Tu comida más completa: 1 proteína + 2 carbohidratos + 1 grasa + ensalada de tomate y zanahoria.</div><div class="mh"><b>2</b><div><h3>Almuerzo</h3><small>~560 kcal</small></div></div><div class="ms"><span><u style="background:var(--g)"></u><b>~40g</b> proteína</span><span><u style="background:var(--ac)"></u><b>~64g</b> carbs</span><span><u style="background:var(--r)"></u><b>~16g</b> grasas</span></div><div class="og"><article class="oc"><em>A</em><h4>Pollo a la plancha con arroz y aguacate</h4><ul><li><span>Pechuga de pollo cocida</span><b>120g</b></li><li><span>Arroz cocido</span><b>180g</b></li><li><span>Aguacate</span><b>50g</b></li><li><span>Ensalada de tomate y zanahoria</span><b>libre</b></li></ul><p class="dr">Agua, aromática, té o café sin azúcar.</p></article><article class="oc"><em>B</em><h4>Res magra con papa y ensalada</h4><ul><li><span>Carne de res magra cocida</span><b>120g</b></li><li><span>Papa cocida</span><b>300g</b></li><li><span>Aguacate</span><b>30g</b></li><li><span>Tomate y zanahoria rallada</span><b>libre</b></li></ul><p class="dr">Agua, aromática, té o café sin azúcar.</p></article><article class="oc"><em>C</em><h4>Pasta boloñesa con brócoli</h4><ul><li><span>Pasta cocida</span><b>180g</b></li><li><span>Carne molida magra cocida</span><b>120g</b></li><li><span>Salsa de tomate natural</span><b>½ taza</b></li><li><span>Brócoli al vapor</span><b>100g</b></li><li><span>Aceite de oliva</span><b>5ml</b></li></ul><p class="dr">Agua, aromática, té o café sin azúcar.</p></article><article class="oc"><em>D</em><h4>Pescado con arroz y plátano</h4><ul><li><span>Tilapia o trucha cocida</span><b>150g</b></li><li><span>Arroz cocido</span><b>100g</b></li><li><span>Plátano maduro cocido</span><b>80g</b></li><li><span>Aguacate</span><b>50g</b></li><li><span>Ensalada de tomate</span><b>libre</b></li></ul><p class="dr">Agua, aromática, té o café sin azúcar.</p></article></div></section><section class="meal"><div class="sec" style="margin-top:0"><h2>Comida 3 · Merienda</h2><span class="tag">Pre o post entreno</span></div><div class="note">Tómala 30–60 min antes de entrenar, o después como recuperación.&nbsp;</div><div class="mh"><b>3</b><div><h3>Merienda</h3><small>~365 kcal</small></div></div><div class="ms"><span><u style="background:var(--g)"></u><b>~28g</b> proteína</span><span><u style="background:var(--ac)"></u><b>~38g</b> carbs</span><span><u style="background:var(--r)"></u><b>~11g</b> grasas</span></div><div class="og"><article class="oc"><em>A</em><h4>Batido de proteína con banano y maní</h4><ul><li><span>Whey</span><b>1 scoop</b></li><li><span>Banano</span><b>1 und</b></li><li><span>Maní</span><b>15g</b></li><li><span>Agua o leche de almendras</span><b>250ml</b></li><li><span>Hielo</span><b>al gusto</b></li></ul><p class="dr">Agua.</p></article><article class="oc"><em>B</em><h4>Sándwich de atún con fruta</h4><ul><li><span>Pan integral</span><b>2 rebanadas</b></li><li><span>Atún en agua</span><b>1 lata</b></li><li><span>Aguacate</span><b>30g</b></li><li><span>Tomate</span><b>al gusto</b></li><li><span>Mandarinas</span><b>2 und</b></li></ul><p class="dr">Agua.</p></article><article class="oc"><em>C</em><h4>Yogur griego con banano y maní</h4><ul><li><span>Yogur griego natural</span><b>200g</b></li><li><span>Banano</span><b>1 und</b></li><li><span>Maní</span><b>15g</b></li><li><span>Canela</span><b>al gusto</b></li></ul><p class="dr">Agua.</p></article><article class="oc"><em>D</em><h4>Arepa con huevo, jamón y queso</h4><ul><li><span>Arepa mediana</span><b>1 und</b></li><li><span>Huevo entero</span><b>1 und</b></li><li><span>Claras de huevo</span><b>3 und</b></li><li><span>Jamón de pavo</span><b>2 lonjas</b></li><li><span>Queso mozzarella o campesino</span><b>20g</b></li><li><span>Manzana pequeña</span><b>1 und</b></li></ul><p class="dr">Agua.</p></article></div></section><section class="meal"><div class="sec" style="margin-top:0"><h2>Comida 4 · Cena</h2><span class="tag">Noche</span></div><div class="note">Cena con mucha proteína y carbohidrato moderado. Si hay saciedad temprana, come despacio y en porciones más pequeñas.</div><div class="mh"><b>4</b><div><h3>Cena</h3><small>~465 kcal</small></div></div><div class="ms"><span><u style="background:var(--g)"></u><b>~37g</b> proteína</span><span><u style="background:var(--ac)"></u><b>~46g</b> carbs</span><span><u style="background:var(--r)"></u><b>~15g</b> grasas</span></div><div class="og"><article class="oc"><em>A</em><h4>Omelette de vegetales con papa</h4><ul><li><span>Huevos enteros</span><b>2 und</b></li><li><span>Queso mozzarella</span><b>20g</b></li><li><span>Papa cocida</span><b>200g</b></li></ul><p class="dr">Infusión relajante (manzanilla, toronjil) o agua.</p></article><article class="oc"><em>B</em><h4>Wrap de pollo desmechado</h4><ul><li><span>Tortilla de trigo grande</span><b>1 und</b></li><li><span>Pollo desmechado</span><b>120g</b></li><li><span>Aguacate</span><b>30g</b></li><li><span>Manzana</span><b>1 und</b></li></ul><p class="dr">Infusión relajante (manzanilla, toronjil) o agua.</p></article><article class="oc"><em>C</em><h4>Atún con arepa y aguacate</h4><ul><li><span>Atún en agua</span><b>1½ latas</b></li><li><span>Arepa mediana</span><b>1 und</b></li><li><span>Aguacate</span><b>50g</b></li><li><span>Manzana o pera</span><b>1 und</b></li></ul><p class="dr">Infusión relajante (manzanilla, toronjil) o agua.</p></article><article class="oc"><em>D</em><h4>Bowl de res con arroz y brócoli</h4><ul><li><span>Carne de res magra cocida</span><b>100g</b></li><li><span>Arroz cocido</span><b>120g</b></li><li><span>Aguacate</span><b>40g</b></li></ul><p class="dr">Infusión relajante (manzanilla, toronjil) o agua.</p></article></div></section></div>
+
+<div class="sec"><h2>Lista de porciones</h2><span class="tag">Para intercambiar</span></div>
+<div class="note">Cada grupo muestra equivalencias entre sí. Cambia un alimento por otro del mismo grupo y mantienes los macros del plan. Tomate, zanahoria y brócoli son libres.</div>
+<div class="pg" id="porc"><div class="pc"><div>🥩 Proteínas (~28 g)</div><ul><li><span>Pechuga o muslo de pollo cocido</span><b>100g</b></li><li><span>Carne de res magra cocida</span><b>100g</b></li><li><span>Carne molida magra cocida</span><b>100g</b></li><li><span>Pescado blanco cocido</span><b>130g</b></li><li><span>Salmón cocido</span><b>120g</b></li><li><span>Camarones cocidos</span><b>120g</b></li><li><span>Atún en agua</span><b>1½ latas</b></li><li><span>Huevos</span><b>2 enteros + 3 claras</b></li><li><span>Yogur griego natural</span><b>250g</b></li><li><span>Queso cottage</span><b>200g</b></li><li><span>Whey</span><b>1 scoop</b></li></ul></div><div class="pc"><div>🍚 Carbohidratos (~40 g)</div><ul><li><span>Arroz cocido</span><b>150g</b></li><li><span>Pasta cocida</span><b>150g</b></li><li><span>Papa cocida</span><b>220g</b></li><li><span>Yuca cocida</span><b>130g</b></li><li><span>Plátano maduro cocido</span><b>120g</b></li><li><span>Arepa mediana</span><b>1½ und</b></li><li><span>Pan integral</span><b>3 rebanadas</b></li><li><span>Tortilla de trigo grande</span><b>1½ und</b></li><li><span>Frijoles o lentejas cocidos</span><b>200g</b></li><li><span>Quinoa cocida</span><b>200g</b></li><li><span>Granola sin azúcar</span><b>50g</b></li></ul></div><div class="pc"><div>🥑 Grasas (~9 g)</div><ul><li><span>Aguacate</span><b>60g</b></li><li><span>Maní</span><b>15g</b></li><li><span>Almendras</span><b>15g</b></li><li><span>Crema de maní natural</span><b>15g</b></li><li><span>Aceite de oliva</span><b>10ml</b></li><li><span>Queso mozzarella</span><b>30g</b></li></ul></div><div class="pc"><div>🍓 Frutas (~18 g)</div><ul><li><span>Banano</span><b>1 und</b></li><li><span>Manzana o pera</span><b>1 und</b></li><li><span>Mandarina</span><b>2 und</b></li><li><span>Fresas</span><b>10 und</b></li><li><span>Piña</span><b>150g</b></li><li><span>Mango</span><b>120g</b></li><li><span>Papaya</span><b>200g</b></li><li><span>Kiwi</span><b>2 und</b></li><li><span>Uvas</span><b>15 und</b></li><li><span>Arándanos</span><b>100g</b></li></ul></div><div class="pc"><div>🥕 Vegetales (libres)</div><ul><li><span>Tomate</span><b>libre</b></li><li><span>Zanahoria</span><b>libre</b></li><li><span>Brócoli</span><b>libre</b></li></ul></div></div>
+
+<div class="sec"><h2>Suplementos</h2><span class="tag">No obligatorios</span></div>
+<div class="cards" id="sup"><div class="card"><h3>Creatina monohidratada</h3><p style="color:var(--g);font-weight:500;margin-bottom:6px">Mejora fuerza y rendimiento</p><p>5 g al día, todos los días. Puede subir 1–2 kg en la báscula por agua dentro del músculo; no es grasa.</p><p class="dr">Marcas que yo recomiendo: IMN, Pro Science, Optimum Nutrition</p></div><div class="card"><h3>Proteína whey</h3><p style="color:var(--g);font-weight:500;margin-bottom:6px">Te ayuda a llegar a los 140 g</p><p>1 scoop en el batido o en los pancakes. Útil cuando el apetito está bajo.</p><p class="dr">Marcas que yo recomiendo: ISO Whey (IMN), Best Protein (Proscience)</p></div></div>
+</main>
+
+<footer class="foot"><b>NJ Coaching</b>Nico Jara · @Nicojara.09<br>Estética · Salud · Deporte<br></footer>
+
+
+
+
+</body></html>
